@@ -1,0 +1,71 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f5f5f5;
+  --btn-bg: #000000;
+  --btn-text: #ffffff;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+  --btn-bg: #ffffff;
+  --btn-text: #000000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: 0.3s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.btn {
+  padding: 10px 15px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 6px 10px;
+}
